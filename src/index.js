@@ -4,13 +4,13 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-let valores = [];
+let valor = [];
 
 const media = require("./media.js");
 
 app.post("/media", (req, res) => {
   const { nota1, nota2 } = req.body;
-  const valores = { nota1, nota2 };
+  const valor = { nota1, nota2 };
   const resultado = {
     nota1,
     nota2,
