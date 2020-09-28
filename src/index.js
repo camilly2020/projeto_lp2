@@ -19,6 +19,8 @@ app.post("/media", (req, res) => {
   res.status(201).json(resultado);
 });
 
+
+
 app.listen(3000, () => {
   console.log(`Media API is running!`);
 });
